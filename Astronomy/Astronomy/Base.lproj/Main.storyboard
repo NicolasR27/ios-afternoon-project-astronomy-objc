@@ -1,24 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Iy-aw-K1p">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Detail View Controller-->
+        <scene sceneID="rpZ-ja-kgn">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="0Iy-aw-K1p" customClass="DetailViewController" customModule="Astronomy___ObjC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AO4-Vy-VeC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WJb-TG-weQ">
+                                <rect key="frame" x="0.0" y="144" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WJb-TG-weQ" secondAttribute="height" multiplier="1:1" id="BcQ-gJ-4Dm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5O-ek-hJ8">
+                                <rect key="frame" x="20" y="667" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dx-M8-jH6">
+                                <rect key="frame" x="133.5" y="696" width="147" height="30"/>
+                                <state key="normal" title="Save to Photo Library"/>
+                                <connections>
+                                    <action selector="save:" destination="0Iy-aw-K1p" eventType="touchUpInside" id="ZLE-gi-eqx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncs-6g-Srj">
+                                <rect key="frame" x="20" y="638" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5qh-Uu-gPw" firstAttribute="trailing" secondItem="WJb-TG-weQ" secondAttribute="trailing" id="6ea-6E-1Kn"/>
+                            <constraint firstItem="5qh-Uu-gPw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="w5O-ek-hJ8" secondAttribute="trailing" symbolic="YES" id="A4G-7h-R6r"/>
+                            <constraint firstItem="5qh-Uu-gPw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ncs-6g-Srj" secondAttribute="trailing" symbolic="YES" id="AmW-m5-ZHp"/>
+                            <constraint firstItem="7dx-M8-jH6" firstAttribute="centerX" secondItem="AO4-Vy-VeC" secondAttribute="centerX" id="BVV-1X-sOG"/>
+                            <constraint firstItem="Ncs-6g-Srj" firstAttribute="leading" secondItem="5qh-Uu-gPw" secondAttribute="leading" constant="20" id="HAR-WP-KcF"/>
+                            <constraint firstItem="w5O-ek-hJ8" firstAttribute="top" secondItem="Ncs-6g-Srj" secondAttribute="bottom" constant="8" id="LOO-cb-iK3"/>
+                            <constraint firstItem="7dx-M8-jH6" firstAttribute="top" secondItem="w5O-ek-hJ8" secondAttribute="bottom" constant="8" id="WeU-rg-ozE"/>
+                            <constraint firstItem="Ncs-6g-Srj" firstAttribute="top" secondItem="WJb-TG-weQ" secondAttribute="bottom" constant="80" id="Zgj-4u-EZD"/>
+                            <constraint firstItem="WJb-TG-weQ" firstAttribute="top" secondItem="5qh-Uu-gPw" secondAttribute="top" constant="100" id="gZF-B2-Au4"/>
+                            <constraint firstItem="w5O-ek-hJ8" firstAttribute="leading" secondItem="5qh-Uu-gPw" secondAttribute="leading" constant="20" id="j1B-bd-I2h"/>
+                            <constraint firstItem="WJb-TG-weQ" firstAttribute="centerX" secondItem="AO4-Vy-VeC" secondAttribute="centerX" id="obE-LZ-BU5"/>
+                            <constraint firstItem="WJb-TG-weQ" firstAttribute="leading" secondItem="5qh-Uu-gPw" secondAttribute="leading" id="xRf-ry-eJH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5qh-Uu-gPw"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraLabel" destination="w5O-ek-hJ8" id="6HK-Dw-eSS"/>
+                        <outlet property="detailLabel" destination="Ncs-6g-Srj" id="5wJ-BJ-cW5"/>
+                        <outlet property="solPhotoIV" destination="WJb-TG-weQ" id="v0I-t2-nea"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSo-T1-Uj3" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133" y="133"/>
         </scene>
     </scenes>
 </document>
