@@ -6,12 +6,17 @@
 //  Copyright © 2020 Nicolas Rios. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
 
 @interface Cache : NSObject
 
-@end
+@property (nonatomic, nullable) NSMutableDictionary *cache;
+@property (nonatomic, nullable) dispatch_queue_t queue;
 
-NS_ASSUME_NONNULL_END
+- (void)cache:(NSNumber * _Nullable )key forValue:(id _Nullable)value;
+- (id _Nullable)value:(NSNumber * _Nullable)key;
+- (id _Nullable)removeValue:(NSNumber * _Nullable)key;
+- (void)clear;
+
+@end

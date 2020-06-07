@@ -16,6 +16,15 @@
 		3E10788E248B86230085E00E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10788D248B86230085E00E /* ViewController.swift */; };
 		3E107890248B86BE0085E00E /* PhotoManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10788F248B86BE0085E00E /* PhotoManifest.swift */; };
 		3E107893248B86F50085E00E /* SolPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E107892248B86F50085E00E /* SolPhoto.m */; };
+		3E107896248B87F10085E00E /* RoverPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E107895248B87F10085E00E /* RoverPhoto.m */; };
+		3E107899248B880F0085E00E /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E107898248B880F0085E00E /* Cache.m */; };
+		3E10789C248B88680085E00E /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10789B248B88680085E00E /* PhotoCollectionViewController.swift */; };
+		3E10789E248B887E0085E00E /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10789D248B887E0085E00E /* PhotoViewController.swift */; };
+		3E1078A0248B889C0085E00E /* RoverPhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10789F248B889C0085E00E /* RoverPhotoDetailViewController.swift */; };
+		3E1078A2248B88FC0085E00E /* RoverPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1078A1248B88FC0085E00E /* RoverPhotoCollectionViewCell.swift */; };
+		3E1078A5248B8A890085E00E /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1078A4248B8A890085E00E /* PhotoController.m */; };
+		3E1078A8248C8BD50085E00E /* NSURL+SecureHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1078A7248C8BD50085E00E /* NSURL+SecureHttp.m */; };
+		3E1078AB248C8BFE0085E00E /* FetchPhotoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1078AA248C8BFE0085E00E /* FetchPhotoOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +43,20 @@
 		3E10788F248B86BE0085E00E /* PhotoManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManifest.swift; sourceTree = "<group>"; };
 		3E107891248B86F50085E00E /* SolPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SolPhoto.h; sourceTree = "<group>"; };
 		3E107892248B86F50085E00E /* SolPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SolPhoto.m; sourceTree = "<group>"; };
+		3E107894248B87F10085E00E /* RoverPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoverPhoto.h; sourceTree = "<group>"; };
+		3E107895248B87F10085E00E /* RoverPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoverPhoto.m; sourceTree = "<group>"; };
+		3E107897248B880F0085E00E /* Cache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
+		3E107898248B880F0085E00E /* Cache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cache.m; sourceTree = "<group>"; };
+		3E10789B248B88680085E00E /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		3E10789D248B887E0085E00E /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		3E10789F248B889C0085E00E /* RoverPhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoDetailViewController.swift; sourceTree = "<group>"; };
+		3E1078A1248B88FC0085E00E /* RoverPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E1078A3248B8A890085E00E /* PhotoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoController.h; sourceTree = "<group>"; };
+		3E1078A4248B8A890085E00E /* PhotoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
+		3E1078A6248C8BD50085E00E /* NSURL+SecureHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+SecureHttp.h"; sourceTree = "<group>"; };
+		3E1078A7248C8BD50085E00E /* NSURL+SecureHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SecureHttp.m"; sourceTree = "<group>"; };
+		3E1078A9248C8BFE0085E00E /* FetchPhotoOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchPhotoOperation.h; sourceTree = "<group>"; };
+		3E1078AA248C8BFE0085E00E /* FetchPhotoOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchPhotoOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +94,10 @@
 				3E10788B248B85E10085E00E /* Models */,
 				3E089E8724871AF600820D61 /* AppDelegate.m */,
 				3E089E8924871AF600820D61 /* SceneDelegate.h */,
+				3E1078A6248C8BD50085E00E /* NSURL+SecureHttp.h */,
+				3E1078A7248C8BD50085E00E /* NSURL+SecureHttp.m */,
+				3E1078A9248C8BFE0085E00E /* FetchPhotoOperation.h */,
+				3E1078AA248C8BFE0085E00E /* FetchPhotoOperation.m */,
 				3E089E8A24871AF600820D61 /* SceneDelegate.m */,
 				3E089E8F24871AF600820D61 /* Main.storyboard */,
 				3E089E9224871AF800820D61 /* Assets.xcassets */,
@@ -88,8 +115,26 @@
 				3E10788F248B86BE0085E00E /* PhotoManifest.swift */,
 				3E107891248B86F50085E00E /* SolPhoto.h */,
 				3E107892248B86F50085E00E /* SolPhoto.m */,
+				3E107894248B87F10085E00E /* RoverPhoto.h */,
+				3E107895248B87F10085E00E /* RoverPhoto.m */,
+				3E107897248B880F0085E00E /* Cache.h */,
+				3E107898248B880F0085E00E /* Cache.m */,
+				3E1078A3248B8A890085E00E /* PhotoController.h */,
+				3E1078A4248B8A890085E00E /* PhotoController.m */,
+				3E10789A248B88170085E00E /* ViewControllers */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3E10789A248B88170085E00E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E10789B248B88680085E00E /* PhotoCollectionViewController.swift */,
+				3E10789D248B887E0085E00E /* PhotoViewController.swift */,
+				3E10789F248B889C0085E00E /* RoverPhotoDetailViewController.swift */,
+				3E1078A1248B88FC0085E00E /* RoverPhotoCollectionViewCell.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,11 +209,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E089E8824871AF600820D61 /* AppDelegate.m in Sources */,
+				3E1078A8248C8BD50085E00E /* NSURL+SecureHttp.m in Sources */,
+				3E1078A5248B8A890085E00E /* PhotoController.m in Sources */,
 				3E107893248B86F50085E00E /* SolPhoto.m in Sources */,
 				3E089E9924871AF800820D61 /* main.m in Sources */,
 				3E107890248B86BE0085E00E /* PhotoManifest.swift in Sources */,
+				3E1078AB248C8BFE0085E00E /* FetchPhotoOperation.m in Sources */,
+				3E1078A2248B88FC0085E00E /* RoverPhotoCollectionViewCell.swift in Sources */,
+				3E10789C248B88680085E00E /* PhotoCollectionViewController.swift in Sources */,
+				3E107896248B87F10085E00E /* RoverPhoto.m in Sources */,
 				3E10788E248B86230085E00E /* ViewController.swift in Sources */,
+				3E107899248B880F0085E00E /* Cache.m in Sources */,
 				3E089E8B24871AF600820D61 /* SceneDelegate.m in Sources */,
+				3E10789E248B887E0085E00E /* PhotoViewController.swift in Sources */,
+				3E1078A0248B889C0085E00E /* RoverPhotoDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
